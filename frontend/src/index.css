@@ -24,4 +24,8 @@
   .text-note {
     @apply m-1 p-1 basis-4/5 font-normal text-base text-slate-50;
   }
+
+  .text-edit {
+    @apply m-1 p-1 basis-full font-normal text-base text-slate-50;
+  }
 }

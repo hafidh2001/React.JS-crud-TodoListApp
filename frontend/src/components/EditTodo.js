@@ -2,7 +2,7 @@ import React from "react";
 
 const Edittodo = () => {
   return (
-    <div className="components-home">
+    <div id="editComponent" className="components-home">
       <form className="flex flex-row justify-center my-2">
         <input
           type="text"
