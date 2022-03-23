@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        bungee: ["Bungee", "cursive"],
       },
       backgroundImage: {
         primary:
