@@ -1,0 +1,35 @@
+# test getAllProduct
+GET http://localhost:5000/todoApps
+###
+
+
+# test storeProduct
+POST http://localhost:5000/todoApps
+Content-Type: application/json
+
+{
+    "text": "note 7",
+    "status": "active"
+}
+###
+
+
+# test getProductById
+GET http://localhost:5000/todoApps/25
+###
+
+
+# test updateProduct
+PATCH http://localhost:5000/todoApps/25/update
+Content-Type: application/json
+
+{
+    "text": "note 2 telah diubah",
+    "status": "active"
+}
+###
+
+
+# test deleteById
+DELETE http://localhost:5000/todoApps/25/delete
+###
