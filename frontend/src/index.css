@@ -25,6 +25,10 @@
     @apply m-1 p-1 basis-4/5 font-normal text-base text-slate-50;
   }
 
+  .card-edit {
+    @apply bg-primary my-1 mx-0 p-0 min-h-[44px] flex flex-row items-center rounded-md;
+  }
+
   .text-edit {
     @apply m-1 p-1 basis-full font-normal text-base text-slate-50;
   }
