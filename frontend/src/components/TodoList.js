@@ -18,6 +18,12 @@ const Todolist = () => {
     setList(response.data);
   };
 
+  // asynchronous arrow function expression delete-dataById
+  const deleteList = async (id) => {
+    await axios.delete(`http://localhost:5000/todoApps/${id}/delete`);
+    getList();
+  };
+
   return (
     <div id="listComponent" className="component-home flex flex-col">
       {lists.map((list) => (
@@ -31,7 +37,10 @@ const Todolist = () => {
             >
               <span className="m-auto text-sm group-hover:scale-105">✏️</span>
             </Link>
-            <button className="w-7 h-7 m-1 ml-[0.5px] p-0 bg-slate-800 rounded-md cursor-pointer hover:bg-slate-900 hover:scale-105 group">
+            <button
+              onClick={() => deleteList(list.id)}
+              className="w-7 h-7 m-1 ml-[0.5px] p-0 bg-slate-800 rounded-md cursor-pointer hover:bg-slate-900 hover:scale-105 group"
+            >
               <span className="m-auto text-sm group-hover:scale-105">❌</span>
             </button>
           </div>
