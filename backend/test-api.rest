@@ -8,28 +8,28 @@ POST http://localhost:5000/todoApps
 Content-Type: application/json
 
 {
-    "text": "note 7",
+    "text": "note 10000",
     "status": "active"
 }
 ###
 
 
 # test getProductById
-GET http://localhost:5000/todoApps/25
+GET http://localhost:5000/todoApps/31
 ###
 
 
 # test updateProduct
-PATCH http://localhost:5000/todoApps/25/update
+PATCH http://localhost:5000/todoApps/31/update
 Content-Type: application/json
 
 {
-    "text": "note 2 telah diubah",
+    "text": "note 10000 telah diubah",
     "status": "active"
 }
 ###
 
 
 # test deleteById
-DELETE http://localhost:5000/todoApps/25/delete
+DELETE http://localhost:5000/todoApps/31/delete
 ###

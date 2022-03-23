@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  span {
+    @apply font-inter;
+  }
+}
+
+@layer component {
+  .component-home {
+    @apply my-5 mx-0 p-0 w-full box-border overflow-hidden;
+  }
+
+  .card-note {
+    @apply bg-primary my-1 mx-0 p-0 flex flex-row items-center rounded-md;
+  }
+
+  .text-note {
+    @apply m-1 p-1 basis-4/5 font-normal text-base text-slate-50;
+  }
+}
