@@ -27,7 +27,14 @@ const Todolist = () => {
   return (
     <div id="listComponent" className="component-home flex flex-col">
       {lists.map((list) => (
-        <div key={list.id} className="card-note">
+        <div
+          key={list.id}
+          className={
+            list.status === "active"
+              ? "card-note cursor-pointer"
+              : "card-note cursor-pointer line-through"
+          }
+        >
           <span className="text-note">{list.text}</span>
           <div className="button m-1 basis-1/5 flex justify-center">
             <Link

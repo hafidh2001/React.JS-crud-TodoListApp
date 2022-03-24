@@ -22,7 +22,10 @@ const Showtodo = () => {
   }, [id]); // id in useEffect for stop looping run function getListById
 
   return (
-    <div id="showComponent" className="component-home flex flex-col">
+    <div
+      id="showComponent"
+      className="component-home flex flex-col cursor-default"
+    >
       <h3 className="text-slate-50 font-inter text-sm font-light">List :</h3>
       <div key={list} className="card-note">
         <span className="text-edit">{text}</span>

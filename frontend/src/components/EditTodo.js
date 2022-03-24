@@ -15,7 +15,6 @@ const Edittodo = () => {
     // store-data
     await axios.patch(`http://localhost:5000/todoApps/${id}/update`, {
       text: text,
-      status: "active",
     });
     // to use navigate -> navigate(path);
     navigate("/");
@@ -42,7 +41,10 @@ const Edittodo = () => {
           </button>
         </form>
       </div>
-      <div id="editComponentText" className="component-home flex flex-col">
+      <div
+        id="editComponentText"
+        className="component-home flex flex-col cursor-default"
+      >
         <h3 className="text-slate-50 font-inter text-sm font-light">
           Update List :
         </h3>

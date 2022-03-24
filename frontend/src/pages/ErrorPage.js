@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ErrorPage() {
   return (
-    <div className="bg-slate-900 w-full h-screen flex items-center justify-center">
+    <div className="bg-slate-900 w-full h-screen flex items-center justify-center cursor-default">
       <div>
         <h1 className="mt-2 mb-8 text-center font-bungee text-9xl text-stone-50">
           404
