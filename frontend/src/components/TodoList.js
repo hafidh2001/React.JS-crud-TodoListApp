@@ -30,9 +30,7 @@ const Todolist = () => {
         <div
           key={list.id}
           className={
-            list.status === "active"
-              ? "card-note cursor-pointer"
-              : "card-note cursor-pointer line-through"
+            list.status === "active" ? "card-note" : "card-note line-through"
           }
         >
           <span className="text-note">{list.text}</span>

@@ -18,7 +18,7 @@
   }
 
   .card-note {
-    @apply bg-primary my-1 mx-0 p-0 flex flex-row items-center rounded-md;
+    @apply bg-primary my-1 mx-0 p-0 flex flex-row items-center rounded-md cursor-pointer;
   }
 
   .text-note {
